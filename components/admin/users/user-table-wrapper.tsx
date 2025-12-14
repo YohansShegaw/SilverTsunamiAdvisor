@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import api from "@/lib/api";
 import { DataTable } from "@/components/admin/data-table"; // Your original, simple data table
 import { getUserColumns, User } from "./user-columns";
-import { UserEditModal } from "./user-edit-modal";
+// import { UserEditModal } from "./user-edit-modal";
 import { toast } from "sonner";
 
 export function UserTableWrapper() {
@@ -42,12 +42,12 @@ export function UserTableWrapper() {
                 columns={columns} 
                 data={users}
             />
-            <UserEditModal 
+            {/* <UserEditModal 
                 isOpen={isEditModalOpen} 
                 setIsOpen={setIsEditModalOpen} 
                 user={selectedUser} 
                 onSuccess={fetchData} 
-            />
+            /> */}
         </div>
     );
 }
