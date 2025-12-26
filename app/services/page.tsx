@@ -27,7 +27,7 @@ export default function ServicesPage() {
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 drop-shadow-lg"
+              className="text-5xl md:text-7xl font-black bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 drop-shadow-lg"
             >
               Strategic Services
             </motion.h1>
@@ -63,7 +63,7 @@ export default function ServicesPage() {
         {/* CTA SECTION */}
         <section className="py-20 px-6 bg-[#0E1223] text-center border-t border-white/5">
           <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-purple-400">
               The Optimal Exit Starts Now
             </h2>
             <p className="text-gray-300 text-lg">
@@ -71,7 +71,7 @@ export default function ServicesPage() {
               Let us build your 8-24 month strategy today.
             </p>
             <div className="flex justify-center gap-6 mt-8">
-              <a href="/contact" className="px-10 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold shadow-lg hover:shadow-blue-500/50 transition transform hover:scale-105">
+              <a href="/contact" className="px-10 py-4 rounded-xl bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold shadow-lg hover:shadow-blue-500/50 transition transform hover:scale-105">
                 Schedule Consultation
               </a>
             </div>

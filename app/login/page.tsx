@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <>
       <Navbar />
-      <div className="pt-24 min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-950">
+      <div className="pt-24 min-h-screen bg-linear-to-b from-gray-900 via-black to-gray-950">
         <LoginPage />
       </div>
     </>

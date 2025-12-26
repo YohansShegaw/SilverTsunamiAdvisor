@@ -24,7 +24,7 @@ export function TrustSection() {
             "Their <span className="text-blue-400 font-semibold">independent perspective</span> and deep expertise were crucial in navigating our Chapter 11 case and securing a positive outcome."
           </blockquote>
           <div className="mt-8 flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg">
+            <div className="w-12 h-12 rounded-full bg-linear-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg">
               C
             </div>
             <div>
@@ -39,7 +39,7 @@ export function TrustSection() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-[#111827] to-[#1F2937] p-1 rounded-3xl"
+          className="bg-linear-to-br from-[#111827] to-[#1F2937] p-1 rounded-3xl"
         >
           <div className="bg-[#0B0F1A] rounded-[22px] p-8 md:p-10 border border-white/5 relative overflow-hidden group hover:border-blue-500/30 transition-colors">
             <div className="absolute top-0 right-0 p-4 opacity-50">

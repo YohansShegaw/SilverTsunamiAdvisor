@@ -78,7 +78,7 @@ export default function LoginPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 leading-snug"
+              className="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 leading-snug"
             >
               Silver Tsunami
             </motion.h1>
@@ -163,9 +163,9 @@ export default function LoginPage() {
 
           {/* Divider */}
           <div className="flex items-center my-4">
-            <span className="flex-grow h-[1px] bg-gray-700"></span>
+            <span className="grow h-px bg-gray-700"></span>
             <span className="mx-2 text-gray-500 text-sm">OR</span>
-            <span className="flex-grow h-[1px] bg-gray-700"></span>
+            <span className="grow h-px bg-gray-700"></span>
           </div>
 
           {/* Signup */}

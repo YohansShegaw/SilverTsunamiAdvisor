@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { 
   Calculator, 
   TrendingUp, 
@@ -13,6 +13,7 @@ import {
   RotateCcw 
 } from "lucide-react";
 
+// --- MAKE SURE THIS SAYS 'export default' ---
 export default function CalculatorPage() {
   const [currentEbitda, setCurrentEbitda] = useState(500000);
   const [projectedIncrease, setProjectedIncrease] = useState(100000);
@@ -23,7 +24,7 @@ export default function CalculatorPage() {
   const addedValue = projectedIncrease * multiple;
   const newValuation = (currentEbitda + projectedIncrease) * multiple;
 
-  const fadeInUp = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { 
       opacity: 1, 

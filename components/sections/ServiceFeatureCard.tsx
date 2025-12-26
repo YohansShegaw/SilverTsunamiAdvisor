@@ -47,7 +47,7 @@ export function ServiceFeatureCard({
         onBlur={handleBlur}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="relative h-full flex flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-[#080c14] px-8 py-10 shadow-2xl transition-transform duration-300 hover:scale-[1.01]"
+        className="relative h-full flex flex-col overflow-hidden rounded-4xl border border-white/10 bg-[#080c14] px-8 py-10 shadow-2xl transition-transform duration-300 hover:scale-[1.01]"
       >
         {/* SPOTLIGHT GRADIENT */}
         <div
@@ -74,7 +74,7 @@ export function ServiceFeatureCard({
         {/* CONTENT */}
         <div className="relative z-10 flex flex-col h-full">
             {/* Header Icon */}
-            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 shadow-[0_0_15px_rgba(56,189,248,0.1)] text-cyan-400">
+            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 shadow-[0_0_15px_rgba(56,189,248,0.1)] text-cyan-400">
                 <Icon size={32} strokeWidth={1.5} />
             </div>
 
@@ -83,7 +83,7 @@ export function ServiceFeatureCard({
             <p className="mb-8 text-base text-slate-400 leading-relaxed font-light">{description}</p>
 
             {/* Modern List Style (Pills) */}
-            <div className="mb-8 space-y-3 flex-grow">
+            <div className="mb-8 space-y-3 grow">
                 {features.map((item, i) => (
                 <div key={i} className="group/item flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/10 transition-colors">
                     <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 group-hover/item:bg-cyan-500 group-hover/item:text-black transition-colors">

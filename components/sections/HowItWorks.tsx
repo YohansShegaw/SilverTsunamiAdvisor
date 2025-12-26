@@ -51,7 +51,7 @@ export function HowItWorks() {
         <div className="relative pl-8 md:pl-0">
             
             {/* The Vertical Line */}
-            <div className="absolute left-[39px] md:left-1/2 top-0 bottom-0 w-[2px] bg-white/10 md:-translate-x-1/2 rounded-full" />
+            <div className="absolute left-[39px] md:left-1/2 top-0 bottom-0 w-0.5 bg-white/10 md:-translate-x-1/2 rounded-full" />
 
             <div className="space-y-20">
               {steps.map((item, i) => (
@@ -76,8 +76,8 @@ export function HowItWorks() {
                   </div>
 
                   {/* Icon/Dot Center */}
-                  <div className="absolute left-0 md:left-1/2 w-20 h-20 -translate-x-0 md:-translate-x-1/2 flex items-center justify-center rounded-full bg-[#050505] border-4 border-[#111] z-10 shadow-2xl">
-                    <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center text-white shadow-lg`}>
+                  <div className="absolute left-0 md:left-1/2 w-20 h-20 translate-x-0 md:-translate-x-1/2 flex items-center justify-center rounded-full bg-[#050505] border-4 border-[#111] z-10 shadow-2xl">
+                    <div className={`w-12 h-12 rounded-full bg-linear-to-br ${item.gradient} flex items-center justify-center text-white shadow-lg`}>
                         <item.icon size={20} />
                     </div>
                   </div>

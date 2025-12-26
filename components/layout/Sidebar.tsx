@@ -141,7 +141,7 @@ export function Sidebar() {
               label: user?.email ?? "User",
               href: "#",
               icon: (
-                <div className="h-7 w-7 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-green-500" />
+                <div className="h-7 w-7 shrink-0 rounded-full bg-linear-to-br from-blue-500 to-green-500" />
               ),
             }}
             className={cn(open ? "px-3" : "justify-center px-1")}
